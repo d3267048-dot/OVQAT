@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Галерея — OVQAT</title>
+  <meta name="description" content="Фото готовых порций OVQAT: плов, гречка, курица, завтраки. Корпоративное питание в Ташкенте.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gallery">
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.jpg" alt="OVQAT">
+        <span>
+          <span class="brand-name">OVQAT</span>
+          <span class="brand-sub" data-i18n="brandSub">Корпоративное питание</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-page="home" data-i18n="navHome">Главная</a>
+        <a href="about.html" data-page="about" data-i18n="navAbout">О компании</a>
+        <a href="menu.html" data-page="menu" data-i18n="navMenu">Меню и цены</a>
+        <a href="gallery.html" data-page="gallery" data-i18n="navGallery">Галерея</a>
+        <a href="reviews.html" data-page="reviews" data-i18n="navReviews">Отзывы</a>
+        <a href="contacts.html" data-page="contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang">
+          <button type="button" data-lang="ru" class="active">RU</button>
+          <button type="button" data-lang="uz">UZ</button>
+        </div>
+        <a class="btn btn-gold btn-sm" href="contacts.html" data-i18n="ctaOrder">Оставить заявку</a>
+        <button class="menu-toggle" type="button" aria-label="menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">OVQAT</p>
+      <h1 data-i18n="galleryHero">Галерея</h1>
+      <p class="section-lead" style="color:rgba(247,241,230,.85)" data-i18n="galleryPageLead">Фотографии готовых порций перед доставкой.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid">
+        <figure class="gallery-item" data-full="food-plov.jpg">
+          <img src="food-plov.jpg" alt="Плов">
+          <figcaption data-i18n="g2">Плов с мясом</figcaption>
+        </figure>
+        <figure class="gallery-item" data-full="food-grechka.jpg">
+          <img src="food-grechka.jpg" alt="Гречка">
+          <figcaption data-i18n="g1">Гречка с яйцом</figcaption>
+        </figure>
+        <figure class="gallery-item" data-full="food-chicken.jpg">
+          <img src="food-chicken.jpg" alt="Курица">
+          <figcaption data-i18n="g3">Курица с картофелем</figcaption>
+        </figure>
+        <figure class="gallery-item" data-full="food-breakfast.jpg">
+          <img src="food-breakfast.jpg" alt="Завтрак">
+          <figcaption data-i18n="g4">Завтрак: рис, яйцо, сосиска</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section video-section">
+    <div class="container">
+      <p class="eyebrow" data-i18n="videoEyebrow">Видео с кухни</p>
+      <h2 class="section-title" data-i18n="videoTitle">Готовим и фасуем каждый день</h2>
+      <div class="gold-line"></div>
+      <p class="section-lead" data-i18n="videoLead">Настоящие кадры с нашей кухни: свежие порции перед отправкой на объект. Нажмите на видео, чтобы смотреть со звуком.</p>
+      <div class="reels">
+        <button class="reel" type="button" data-video="plov-1.mp4" style="--i:0">
+          <video src="plov-1.mp4" poster="plov-1.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-cap"><b data-i18n="v1">Плов с мясом</b><small data-i18n="videoHint">Смотреть</small></span>
+        </button>
+        <button class="reel" type="button" data-video="plov-2.mp4" style="--i:1">
+          <video src="plov-2.mp4" poster="plov-2.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-cap"><b data-i18n="v2">Фасовка плова</b><small data-i18n="videoHint">Смотреть</small></span>
+        </button>
+        <button class="reel" type="button" data-video="grechka.mp4" style="--i:2">
+          <video src="grechka.mp4" poster="grechka.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-cap"><b data-i18n="v3">Гречка с яичницей</b><small data-i18n="videoHint">Смотреть</small></span>
+        </button>
+        <button class="reel" type="button" data-video="kartoshka.mp4" style="--i:3">
+          <video src="kartoshka.mp4" poster="kartoshka.jpg" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <span class="reel-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-cap"><b data-i18n="v4">Картошка с курицей</b><small data-i18n="videoHint">Смотреть</small></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox"><img alt=""></div>
+  <div class="video-lightbox" aria-hidden="true">
+    <button class="video-close" type="button" aria-label="close">&times;</button>
+    <video controls playsinline></video>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">OVQAT</div>
+        <p style="margin-top:10px" data-i18n="footerAbout">Корпоративное питание для компаний и организаций. Вкусная еда, надёжный сервис.</p>
+      </div>
+      <div>
+        <h3 data-i18n="navHome">Главная</h3>
+        <p><a href="about.html" data-i18n="navAbout">О компании</a></p>
+        <p><a href="menu.html" data-i18n="navMenu">Меню и цены</a></p>
+        <p><a href="gallery.html" data-i18n="navGallery">Галерея</a></p>
+      </div>
+      <div>
+        <h3 data-i18n="phone">Телефон</h3>
+        <p><a href="tel:+998877369669">+998 87 736 96 69</a></p>
+        <p><a href="tel:+998970373873">+998 97 037 38 73</a></p>
+        <p>Бахромбек</p>
+      </div>
+      <div>
+        <h3 data-i18n="address">Адрес</h3>
+        <p data-i18n="addressFull">Ташкентская область, Кибрайский район, Кибрай, Oqoltin MFY, улица Oq Oltin, дом 51</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 OVQAT. <span data-i18n="rights">Все права защищены.</span></span>
+      <span data-i18n="city">Ташкент, Узбекистан</span>
+    </div>
+  </footer>
+  <a class="telegram" href="https://t.me/ovqat_2026" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.198 2.433a2.07 2.07 0 0 0-1.96-.363L2.54 8.13c-1.57.524-1.553 1.47-.3 1.85l4.43 1.382 10.24-6.46c.484-.3.928-.14.564.192l-8.28 7.47-.32 4.81c.47 0 .677-.216.94-.47l2.26-2.2 4.69 3.46c.86.475 1.48.23 1.7-.8L21.9 4.09c.22-1.07-.38-1.55-.7-1.66z"/></svg>
+  </a>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

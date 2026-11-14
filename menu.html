@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню и цены — OVQAT</title>
+  <meta name="description" content="Обед 35 000 сум, трёхразовое питание 55 000 сум. Корпоративное меню OVQAT для компаний Ташкента.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="menu">
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="logo.jpg" alt="OVQAT">
+        <span>
+          <span class="brand-name">OVQAT</span>
+          <span class="brand-sub" data-i18n="brandSub">Корпоративное питание</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" data-page="home" data-i18n="navHome">Главная</a>
+        <a href="about.html" data-page="about" data-i18n="navAbout">О компании</a>
+        <a href="menu.html" data-page="menu" data-i18n="navMenu">Меню и цены</a>
+        <a href="gallery.html" data-page="gallery" data-i18n="navGallery">Галерея</a>
+        <a href="reviews.html" data-page="reviews" data-i18n="navReviews">Отзывы</a>
+        <a href="contacts.html" data-page="contacts" data-i18n="navContacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang">
+          <button type="button" data-lang="ru" class="active">RU</button>
+          <button type="button" data-lang="uz">UZ</button>
+        </div>
+        <a class="btn btn-gold btn-sm" href="contacts.html" data-i18n="ctaOrder">Оставить заявку</a>
+        <button class="menu-toggle" type="button" aria-label="menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">OVQAT</p>
+      <h1 data-i18n="menuHero">Меню и цены</h1>
+      <p class="section-lead" style="color:rgba(247,241,230,.85)" data-i18n="menuLead">Простые тарифы. Сытные порции. Ежедневная смена блюд.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cards" style="grid-template-columns: repeat(2, 1fr);">
+        <article class="price-card featured">
+          <span class="tag" data-i18n="lunchTag">Самый популярный</span>
+          <h3 data-i18n="lunchName">Обед</h3>
+          <div class="price">35 000 <small data-i18n="lunchNote">на одного человека</small></div>
+          <ul>
+            <li data-i18n="lunch1">Первое, второе, салат и хлеб</li>
+            <li data-i18n="lunch2">Ежедневное разнообразное меню</li>
+            <li data-i18n="lunch3">Горячая доставка на объект</li>
+            <li data-i18n="lunch4">От 8 человек</li>
+          </ul>
+          <a class="btn btn-gold" href="contacts.html" data-i18n="ctaOrder">Оставить заявку</a>
+        </article>
+        <article class="price-card">
+          <span class="tag" data-i18n="threeTag">Полный день</span>
+          <h3 data-i18n="threeName">Трёхразовое питание</h3>
+          <div class="price">55 000 <small data-i18n="threeNote">завтрак + обед + ужин</small></div>
+          <ul>
+            <li data-i18n="three1">Три полноценных приёма пищи</li>
+            <li data-i18n="three2">Свежее приготовление каждый день</li>
+            <li data-i18n="three3">Гибкий график под смены</li>
+            <li data-i18n="three4">Выгодная цена для коллективов</li>
+          </ul>
+          <a class="btn btn-outline" href="contacts.html" data-i18n="ctaOrder">Оставить заявку</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" style="background:#fffdf8">
+    <div class="container">
+      <h2 class="section-title" data-i18n="sampleTitle">Примеры блюд</h2>
+      <p class="section-lead" data-i18n="sampleLead">Меню меняется каждый день. Ниже — реальные позиции с нашей кухни.</p>
+      <div class="menu-sample" style="margin-top:28px">
+        <article class="day">
+          <img src="food-grechka.jpg" alt="">
+          <div><h3 data-i18n="g1">Гречка с яйцом</h3><p data-i18n="d1">Гречневая каша с глазуньей и зеленью</p></div>
+        </article>
+        <article class="day">
+          <img src="food-plov.jpg" alt="">
+          <div><h3 data-i18n="g2">Плов с мясом</h3><p data-i18n="d2">Плов с мясом, морковью и яйцом</p></div>
+        </article>
+        <article class="day">
+          <img src="food-chicken.jpg" alt="">
+          <div><h3 data-i18n="g3">Курица с картофелем</h3><p data-i18n="d3">Запечённая курица с картофелем</p></div>
+        </article>
+        <article class="day">
+          <img src="food-breakfast.jpg" alt="">
+          <div><h3 data-i18n="g4">Завтрак: рис, яйцо, сосиска</h3><p data-i18n="d4">Рис, варёное яйцо и сосиска</p></div>
+        </article>
+      </div>
+      <p class="section-lead" style="margin-top:24px" data-i18n="note">Точный состав обеда на неделю согласуем с вами при заключении договора.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">OVQAT</div>
+        <p style="margin-top:10px" data-i18n="footerAbout">Корпоративное питание для компаний и организаций. Вкусная еда, надёжный сервис.</p>
+      </div>
+      <div>
+        <h3 data-i18n="navHome">Главная</h3>
+        <p><a href="about.html" data-i18n="navAbout">О компании</a></p>
+        <p><a href="menu.html" data-i18n="navMenu">Меню и цены</a></p>
+        <p><a href="gallery.html" data-i18n="navGallery">Галерея</a></p>
+      </div>
+      <div>
+        <h3 data-i18n="phone">Телефон</h3>
+        <p><a href="tel:+998877369669">+998 87 736 96 69</a></p>
+        <p><a href="tel:+998970373873">+998 97 037 38 73</a></p>
+        <p>Бахромбек</p>
+      </div>
+      <div>
+        <h3 data-i18n="address">Адрес</h3>
+        <p data-i18n="addressFull">Ташкентская область, Кибрайский район, Кибрай, Oqoltin MFY, улица Oq Oltin, дом 51</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 OVQAT. <span data-i18n="rights">Все права защищены.</span></span>
+      <span data-i18n="city">Ташкент, Узбекистан</span>
+    </div>
+  </footer>
+  <a class="telegram" href="https://t.me/ovqat_2026" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.198 2.433a2.07 2.07 0 0 0-1.96-.363L2.54 8.13c-1.57.524-1.553 1.47-.3 1.85l4.43 1.382 10.24-6.46c.484-.3.928-.14.564.192l-8.28 7.47-.32 4.81c.47 0 .677-.216.94-.47l2.26-2.2 4.69 3.46c.86.475 1.48.23 1.7-.8L21.9 4.09c.22-1.07-.38-1.55-.7-1.66z"/></svg>
+  </a>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
